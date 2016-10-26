@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		My Portfolio
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="icon" href="favicon.ico"/>
+	<link href="stylesheets/portfolio.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Orbitron" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(function() {});
+$.getScript('http://www.chartjs.org/assets/Chart.js',function(){
+
+
+	var barChartData = {
+	  labels: ["HTML", "JAVASCRIPT", "NODE JS", "PHP", "MYSQL", "AWS-SDK", "CSS", "IRONIO"],
+	  datasets: [{
+	    fillColor: "#F2F5A9",
+	    strokeColor: "black",
+	    data: [100, 80, 40, 80, 90, 30, 70, 80]
+	  }]
+	}
+
+	var index = 1;
+	var ctx = document.getElementById("canvas").getContext("2d");
+	var barChartDemo = new Chart(ctx).Bar(barChartData, {
+	  responsive: true,
+		maintainAspectRatio: false,
+		scaleFontColor: "black",
+		barValueSpacing: 40
+	});
+
+})
+	</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<div class="navbar navbar-inverse navbar-fixed-top" style="margin: 0px;">
+ 		<div class="navbar-header"><a href="#" class="navbar-brand">HOME</a>
+      		<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </a>
+    	</div>
+    	<div class="navbar-right navbar-collapse collapse">
+     		<ul class="nav navbar-nav">
+		        <li><a href="#aboutme">ABOUT</a></li>
+		        <li><a href="#testimonial">TESTIMONIALS</a></li>
+		       <!--  <li><a href="#resume">MY RESUME</a></li> -->
+		        <li class="dropdown">
+		       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">MY RESUME<b class="caret"></b></a>
+		       		<ul class="dropdown-menu">
+		       			<li><a href="#Education">EDUCATION</a></li>
+		       			<li><a href="#workEx">WORK EXPERIENCE</a></li>
+		       		</ul>
+		       	</li>
+		        <li><a href="#techskills">TECHNICAL SKILLS</a></li>
+		        <li><a href="#contactme">CONTACT </a></li>
+     		</ul>
+        </div>
+	</div>
+	<div class="Main">
+    <div class="main_pic"> <img src="./images/AG_1.jpg" alt="Picture"/></div>
+    <div class="aboutme" id="aboutme">
+    	<h2 style="text-align: center;">About me</h2>
+				<div class='has-single-shadow' >
+    	<h4 style="text-align: center; font-family: 'Comic Sans MS', 'Comic Sans', cursive;"><b>Akanksha Gupta</b> - a Web Designer &amp; Web Developer from Pace University</h4>
+		</div>
+			<div class="extraline"></div>
+			<div class="container">
+    		<div class="row">
+    			<div class="col-md-4"><img src="./images/AV.jpg" class="img-circle" alt="Akanksha"  opacity=".8"/> </div>
+    			<div class="col-md-8" style="text-align:center;">
+
+						<h5>I specialize in creating beautiful, usable, professional websites using best practice accessibility
+							and the latest W3C web standards guidelines, resulting in semantix and so friendly HTML and CSS.
+							All my sites are loving hand coded. For building websites my weapons of choice are Photoshop and
+							illustrator for creating layout, then code to produce clean semantic HTML and CSS. </h5>
+								<!-- <h4>I am currently pursuing masters in Computer Science from Pace university.</h4> -->
+								<h3>My Belief: "Give 100 percent to Everything you do and never give up".</h3>
+								<h4 style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">	I love to travel and my Job!</h4>
+    		</div>
+    	</div>
+		</div>
+	 </div>
+	 <div class="testimonial" id="testimonial">
+		 <h2 style="text-align: center;">TESTIMONIAL</h2>
+
+ 	 	<div class="extraline"></div>
+
+						<blockquote style="font-family: 'Comic Sans MS', 'Comic Sans', cursive; color:white;">
+					Akanksha is a highly motivated and driven individual.
+					Not only was she a pleasure to work with but she also demonstrated an extraordinary ability to learn new skills like PHP and MySQL
+					quickly and efficiently and apply them to her day to day work.<br/><span style="padding-left:80%;"> - Client</span>
+				</blockquote>
+
+		</div>
+
+    <div class="resume" id="resume">
+			<h2 style="text-align: center;">MY RESUME</h2>
+			<!-- <h5 style="text-align: center;">Akanksha Gupta - a Web Designer &amp; Web Developer from Pace University</h5> -->
+	<div class="extraline"></div>
+	<div class="Education" id="Education">
+		<h3 style="text-align: left;">EDUCATION</h3>
+		<h4 style="text-align: left;">2006 - NOW</h4>
+		<div class="container">
+    <div class="timelineBarE"></div>
+    <!-- <div class="timelineDot"></div> -->
+    <div class="row">
+        <div class="col-sm-2">
+					<div class="shadowBox"><h6 style="text-align: left;">2015 - NOW</h6></div>
+        </div>
+        <div class="col-sm-10">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-10">
+					<div class="shadowBox"><h5><b>Pace University, New York<br/>MS Computer Science</b></h5>
+						<br/>
+						<a href="#Info" class="btn btn-default" data-toggle="collapse"><i class="fa fa-plus"></i></a> View More Info
+							<div id="Info" class="collapse">
+								<div class="row">
+										<div class="col-sm-4">
+											<b><u>Courses</u></b>
+											<ul>
+													<li>Mobile Web Development and Design</li>
+													<li>Parallel and Distributed Computing</li>
+													<li>Bizlist - Project</li>
+											</ul>
+										</div>
+										<div class="col-sm-4">
+											<ul>
+													<li>&nbsp; </li>
+													<li>Database</li>
+													<li>Internet Computing</li>
+													<li>Network Security</li>
+											</ul>
+										</div>
+										<div class="col-sm-4">
+										<b><u>	GPA </u>- 4.0</b>
+										</div>
+									</div>
+
+
+							</div>
+						</div>
+    		</div>
+			</div>
+		<div class="row">
+        <div class="col-sm-2">
+					<div class="shadowBox"><h6 style="text-align: left;">2009 - 2012</h6></div>
+        </div>
+        <div class="col-sm-10">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-10">
+					<div class="shadowBox"><h5><b>Banasthali University, India<br/>Master of Computer Application</b></h5>
+						<br/>
+						<a href="#Info1" class="btn btn-default" data-toggle="collapse"><i class="fa fa-plus"></i></a> View More Info
+							<div id="Info1" class="collapse">
+								<div class="row">
+										<div class="col-sm-8">
+											<b><u>Project</u></b>
+											<ul>
+													<li>Banasthali Student Leave Management System</li>
+											</ul>
+										</div>
+										<div class="col-sm-4">
+										<b><u>	Percentage </u>- 80%</b>
+										</div>
+									</div>
+							</div>
+        </div>
+    </div>
+	</div>
+		<div class="row">
+				<div class="col-sm-2">
+					<div class="shadowBox"><h6 style="text-align: left;">2006 - 2009</h6></div>
+				</div>
+				<div class="col-sm-10">
+
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-sm-2">
+
+				</div>
+				<div class="col-sm-10">
+						<div class="shadowBox"><h5><b>Banasthali University, India<br/>Bachelor of Science (Computer Science Hons.)</b></h5>
+							<br/>
+							<a href="#Info2" class="btn btn-default" data-toggle="collapse"><i class="fa fa-plus"></i></a> View More Info
+								<div id="Info2" class="collapse">
+									<div class="row">
+											<div class="col-sm-8">
+												<b><u>Project</u></b>
+												<ul>
+														<li>Magic Numbers - A fun game in C language</li>
+												</ul>
+											</div>
+											<div class="col-sm-4">
+											<b><u>	Percentage </u>- 82%</b>
+											</div>
+										</div>
+								</div>
+						</div>
+		</div>
+	</div>
+	</div>
+    	<div class="workEx" id="workEx">
+
+				<h3 style="text-align: left;">Work Experience</h3>
+					<h4 style="text-align: left;">2012 - 2014</h4>
+					<div class="container">
+					<div class="timelineBarW"></div>
+					<!-- <div class="timelineDot"></div> -->
+					<div class="row">
+							<div class="col-sm-2">
+								<div class="shadowBox"><h6 style="text-align: left;">2012 - 2014</h6></div>
+							</div>
+							<div class="col-sm-10">
+
+							</div>
+					</div>
+					<div class="row">
+							<div class="col-sm-2">
+
+							</div>
+							<div class="col-sm-10">
+									<div class="shadowBox"><h5><b>TATA Consultancy Services, India<br/>Hyperian Essbase Production Executive</b></h5>
+										<br/>
+										<a href="#Info3" class="btn btn-default" data-toggle="collapse"><i class="fa fa-plus"></i></a> View More Info
+											<div id="Info3" class="collapse">
+												<div class="row">
+														<div class="col-sm-2">
+														</div>
+														<div class="col-sm-4">
+															<b><u>Clients</u></b>
+															<ul>
+																	<li>Aviva</li>
+																	<li> Athene </li>
+															</ul>
+														</div>
+														<div class="col-sm-6">
+														<b><u>	Technology </u></b>
+														<ul>
+																<li>Essbase Planning</li>
+																<li> Hyperion Planning </li>
+																	<li> DRM </li>
+																		<li> Oracle Apps</li>
+																			<li>Informatica, Business Objects </li>
+														</ul>
+														</div>
+													</div>
+											</div>
+							</div>
+					</div>
+
+			</div>
+
+    	</div>
+
+    </div>
+    <div class="techskills" id="techskills">
+			<h3>Techical Skils</h3>
+				<div class="extraline"></div>
+			<div class="chart">
+		 <canvas id="canvas" height="200" width="200" style="padding:20px;"></canvas>
+		</div>
+    </div>
+    <div class="footer" id="contactme">
+    <div class="navbar navbar-inverse navbar-bottom" style="margin: 0px;width: 100%;">
+        <div class="row">
+            <div class="col-md-4" style="padding-left: 10%;">
+
+                <h3>Akanksha Gupta</h3>
+                <p>&copy; 2016 <span> All Rights Reserved. </span></p>
+            </div>
+
+            <div class="col-md-4" style="padding-left: 10%;">
+
+                <div>
+                    <!-- <a href="https://www.google.com/maps/preview/@40.736527,-74.0595777,17z" target="_blank">-->
+										<a href="https://www.google.com/maps/place/143+St+Pauls+Ave,+Jersey+City,+NJ+07306/@40.736527,-74.0748984,14z/data=!4m2!3m1!1s0x89c25739db21f15d:0x81b95b400214802f" target="_blank">
+										<i class="fa fa-map-marker"></i></a>
+                    <span>143 Saint Pauls Avenue</span> Jersey City, NJ
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    +1 201 899 8258
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:gupta.akanksha11@gmail.com">gupta.akanksha11@gmail.com</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-4" style="padding-left: 10%;">
+                <div class="footer-icons">
+
+                    <a href="https://www.facebook.com/akankshavatsalya" target="_blank"><i class="fa fa-facebook" style="margin-right:4%;"></i></a>
+                    <a href="https://www.linkedin.com/in/akanksha-gupta-473850b3?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+			</div>
+</div>
+</body>
+</html>
