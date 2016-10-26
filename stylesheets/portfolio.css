@@ -1,0 +1,410 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css");
+/* line 5, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/portfolio.scss */
+body {
+  overflow-x: hidden;
+  background: no-repeat fixed 100% 100%;
+  color: black;
+  font-family: "Titillium Web", Verdana;
+}
+
+/* line 22, ../sass/portfolio.scss */
+.Main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* line 28, ../sass/portfolio.scss */
+.head {
+  width: 100%;
+}
+
+/* line 32, ../sass/portfolio.scss */
+blockquote {
+  background: transparent;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+}
+
+/* line 39, ../sass/portfolio.scss */
+blockquote:before {
+  color: white;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* line 50, ../sass/portfolio.scss */
+.testimonial {
+  flex: 1;
+  margin: 0px;
+  background-image: url("../images/testimonial.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-color: #211F1F;
+  background-size: 100%;
+  width: 100%;
+  height: 420px;
+  color: #707070;
+  font-weight: 14px;
+  font-family: Orbitron;
+}
+/* line 66, ../sass/portfolio.scss */
+.testimonial .extraline {
+  content: '';
+  display: block;
+  max-width: 570px;
+  height: 5px;
+  margin: 6px auto 34px;
+  background-color: #bfac65;
+}
+/* line 76, ../sass/portfolio.scss */
+.testimonial h2 {
+  font-size: 40px;
+}
+/* line 81, ../sass/portfolio.scss */
+.testimonial .testieffect {
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* line 93, ../sass/portfolio.scss */
+.main_pic {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border: 5px;
+  border-color: black;
+}
+/* line 100, ../sass/portfolio.scss */
+.main_pic img {
+  width: 100%;
+  height: 100%;
+  position: inherit;
+  opacity: .8;
+}
+
+/* line 108, ../sass/portfolio.scss */
+.navbar-text > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 113, ../sass/portfolio.scss */
+.has-single-shadow {
+  text-shadow: 0px 5px 6px rgba(134, 138, 8, 0.6);
+}
+
+/* line 117, ../sass/portfolio.scss */
+.aboutme {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-color: #ffe587;
+}
+/* line 124, ../sass/portfolio.scss */
+.aboutme .container .col-md-4 {
+  background-color: #ffe587;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  padding-bottom: 10px;
+}
+/* line 133, ../sass/portfolio.scss */
+.aboutme .container .col-md-4:hover {
+  transform: rotateY(360deg);
+  -moz-transition-duration: 5s;
+  -o-transition-duration: 5s;
+  -webkit-transition-duration: 5s;
+  transition-duration: 5s;
+}
+/* line 137, ../sass/portfolio.scss */
+.aboutme .container .col-md-8 {
+  background-color: #ffe587;
+  margin-left: 5px;
+  margin: 0px;
+  padding: 5px;
+  height: auto;
+  border-left: 2px dotted #bfac65;
+}
+/* line 146, ../sass/portfolio.scss */
+.aboutme h2 {
+  text-transform: uppercase;
+  margin: 13px 0;
+  display: block;
+  font-size: 58px;
+  font-weight: bold;
+  font-family: Orbitron;
+  color: white;
+}
+/* line 156, ../sass/portfolio.scss */
+.aboutme h4 {
+  text-transform: uppercase;
+  margin: 13px 0;
+  display: block;
+  font-size: 18px/22px;
+  font-weight: bold;
+  font-family: "Titillium Web", Verdana;
+  color: #a09055;
+}
+/* line 166, ../sass/portfolio.scss */
+.aboutme h3 {
+  text-transform: uppercase;
+  margin: 18px 0;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Titillium Web", Verdana;
+  color: #a09055;
+}
+/* line 176, ../sass/portfolio.scss */
+.aboutme h5 {
+  margin: 13px 0;
+  display: block;
+  font-size: 18px/22px;
+  font-weight: bold;
+  font-family: "Titillium Web", Verdana;
+  color: #a09055;
+}
+/* line 186, ../sass/portfolio.scss */
+.aboutme .extraline {
+  content: '';
+  display: block;
+  max-width: 570px;
+  height: 5px;
+  margin: 26px auto 54px;
+  background-color: #bfac65;
+}
+/* line 195, ../sass/portfolio.scss */
+.aboutme .img-circle {
+  width: 270px;
+  height: 236px;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+/* line 206, ../sass/portfolio.scss */
+.footer {
+  flex: 1;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Titillium Web", Verdana;
+  color: white;
+}
+/* line 213, ../sass/portfolio.scss */
+.footer .col-md-4 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: white;
+}
+/* line 219, ../sass/portfolio.scss */
+.footer h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 225, ../sass/portfolio.scss */
+.box h3 {
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+/* line 230, ../sass/portfolio.scss */
+.box {
+  width: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5f/Manhattan_from_Weehawken,_NJ.jpg");
+  opacity: 0.6%;
+  height: 250px;
+  margin: 40px auto;
+}
+
+/* line 240, ../sass/portfolio.scss */
+.Education {
+  margin-bottom: 6%;
+  height: 100%;
+}
+/* line 244, ../sass/portfolio.scss */
+.Education .container {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+/* line 252, ../sass/portfolio.scss */
+.workEx .container {
+  margin-bottom: 0px;
+}
+
+/* line 257, ../sass/portfolio.scss */
+.resume {
+  flex: 1;
+  width: 100%;
+  height: 1100px;
+  background-color: white;
+  margin-bottom: 5px;
+  color: #707070;
+  font-weight: 14px;
+  font-family: Orbitron;
+}
+/* line 267, ../sass/portfolio.scss */
+.resume h2 {
+  font-size: 58px;
+}
+/* line 272, ../sass/portfolio.scss */
+.resume h3 {
+  font-size: 38px;
+  margin-left: 5%;
+  color: #bfac65;
+}
+/* line 278, ../sass/portfolio.scss */
+.resume h4 {
+  font-size: 18px;
+  margin-left: 5%;
+}
+/* line 284, ../sass/portfolio.scss */
+.resume .extraline {
+  content: '';
+  display: block;
+  max-width: 570px;
+  height: 5px;
+  margin: 26px auto 54px;
+  background-color: #bfac65;
+}
+/* line 293, ../sass/portfolio.scss */
+.resume .container {
+  font-family: sans-serif;
+  height: auto;
+}
+/* line 297, ../sass/portfolio.scss */
+.resume .container .col-sm-10 {
+  border-left: 2px dotted #bfac65;
+}
+/* line 299, ../sass/portfolio.scss */
+.resume .container .col-sm-10 .shadowBox {
+  box-shadow: rgba(0, 0, 0, 0.79688) 0px 0px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.79688) 0px 0px 2px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #FFFFFF;
+}
+/* line 310, ../sass/portfolio.scss */
+.resume .container .col-sm-2 {
+  border-right: 3px dotted #bfac65;
+}
+/* line 312, ../sass/portfolio.scss */
+.resume .container .col-sm-2 .shadowBox {
+  margin: 10px;
+  margin-left: 40%;
+  background-color: #FFFFFF;
+}
+
+/* line 319, ../sass/portfolio.scss */
+.techskills {
+  flex: 3;
+  text-transform: uppercase;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  height: 450px;
+  background-color: #707070;
+  margin: 0px;
+  color: black;
+  font-weight: 14px;
+  font-family: Orbitron;
+}
+/* line 332, ../sass/portfolio.scss */
+.techskills .extraline {
+  content: '';
+  display: block;
+  max-width: 480px;
+  height: 5px;
+  margin: 6px auto 24px;
+  background-color: #bfac65;
+}
+
+@media screen and (max-width: 568px) {
+  /* line 343, ../sass/portfolio.scss */
+  .Main {
+    flex-flow: column wrap;
+  }
+}
