@@ -1,0 +1,345 @@
+$default-text-shadow-color: rgba(#868A08, 0.6);
+$default-text-shadow-blur: 6px;
+$default-text-shadow-v-offset: 5px;
+
+@import "compass/css3";
+@import "compass";
+@import "compass/reset";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css');
+$fontFamily: 'Titillium Web', Verdana;
+
+body {
+
+	overflow-x: hidden;
+	background: no-repeat fixed 100% 100%;
+
+	color:black;
+	font-family: $fontFamily;
+
+	}
+
+.Main{
+	display: flex;
+	flex-flow:row wrap; // without this they will all be on one wide row
+	justify-content: space-between;
+	}
+
+.head
+{
+	width:100%;
+}
+blockquote {
+  background: transparent;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: white;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+// blockquote p {
+// //  display: inline;
+// }
+.testimonial
+{
+	//text-transform:uppercase;
+	flex:1;
+	margin: 0px;
+	background-image: url("../images/testimonial.jpg");
+	background-repeat: no-repeat;
+ 	background-position: 100%;
+	background-color: #211F1F;
+//	opacity: 1.5;
+	background-size:100%;
+	width:100%;
+	height:420px;
+	color:#707070;
+	font-weight:14px;
+	font-family: Orbitron;
+	.extraline
+	{
+		content: '';
+			display: block;
+			max-width: 570px;
+			height: 5px;
+			margin: 6px auto 34px;
+			background-color: #bfac65;
+	}
+
+	h2
+	{
+			font-size: 40px;
+
+	}
+	.testieffect
+	{
+		//background-color: #ffe587;
+
+		color:white;
+		text-align: center;
+		padding-top: 0px;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+.main_pic
+{
+	width:100%;
+	height:400px;
+	position:relative;
+	border :5px;
+	border-color: black;
+	img{
+		width:100%;
+		height:100%;
+		position:inherit;
+    opacity: .8;
+	}
+}
+
+.navbar-text > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.has-single-shadow {
+  @include single-text-shadow;
+}
+
+.aboutme
+{
+		flex:1;
+	width:100%;
+	height:auto;
+	background-color:#ffe587;
+	.container{
+	.col-md-4{
+			background-color:#ffe587;
+			margin: 0px;
+			padding: 0px;
+			height:auto;
+			padding-bottom: 10px;
+
+
+	}
+	.col-md-4:hover {
+		transform: rotateY(360deg);
+		@include transition-duration(5s);
+	}
+	.col-md-8
+	{
+			background-color:#ffe587;
+			margin-left: 5px;
+			margin: 0px;
+			padding: 5px;
+			height:auto;
+			border-left: 2px dotted #bfac65;
+	}}
+	h2
+	{
+		text-transform:uppercase;
+		margin: 13px 0;
+		display: block;
+		font-size: 58px;
+		font-weight:bold;
+		font-family:Orbitron ;
+		color: white;
+	}
+	h4
+	{
+		text-transform:uppercase;
+		margin: 13px 0;
+		display: block;
+		font-size: 18px/22px;
+		font-weight:bold;
+		font-family: $fontFamily;
+		color: #a09055;
+	}
+	h3
+	{
+		text-transform:uppercase;
+		margin: 18px 0;
+		display: block;
+		font-size: 20px;
+		font-weight:bold;
+		font-family: $fontFamily;
+		color: #a09055;
+	}
+	h5
+	{
+	//	text-transform:uppercase;
+		margin: 13px 0;
+		display: block;
+		font-size: 18px/22px;
+		font-weight:bold;
+		font-family: $fontFamily;
+		color: #a09055;
+	}
+	.extraline
+	{
+		content: '';
+	    display: block;
+	    max-width: 570px;
+	    height: 5px;
+	    margin: 26px auto 54px;
+	    background-color: #bfac65;
+	}
+	.img-circle
+	{
+		width :270px;
+		height :236px;
+		margin-left:20px;;
+		margin-top:0px;
+		margin-right:0px;
+		padding:0px;
+	}
+}
+
+.footer
+{
+		flex:1;
+	width: 100%;
+	font-weight:bold;
+	font-family: $fontFamily;
+	color: white;
+	.col-md-4
+	{
+		padding-top: 3%;
+		padding-bottom: 3%;
+		color: white;
+	}
+	h3
+	{
+		margin:0px;
+		padding:0px;
+	}
+}
+.box h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
+.box {
+	width:100%;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5f/Manhattan_from_Weehawken,_NJ.jpg");
+	opacity: 0.6%;
+	height:250px;
+
+	margin:40px auto;
+}
+
+
+.Education
+{
+	margin-bottom: 6%;
+	height:100%;
+	.container{
+		height:100%;
+		margin-bottom: 0px;
+
+	}
+}
+.workEx
+{
+	.container{
+	margin-bottom: 0px;
+
+}
+}
+.resume
+{
+		flex:1;
+	width:100%;
+	height:1100px;
+	background-color: white;
+	margin-bottom: 5px;
+	color:#707070;
+	font-weight:14px;
+	font-family: Orbitron;
+	h2
+	{
+			font-size: 58px;
+
+	}
+	h3
+	{
+			font-size: 38px;
+			margin-left: 5%;
+			color:#bfac65;
+	}
+	h4
+	{
+			font-size: 18px;
+			margin-left: 5%;
+
+	}
+	.extraline
+	{
+		content: '';
+	    display: block;
+	    max-width: 570px;
+	    height: 5px;
+	    margin: 26px auto 54px;
+	    background-color: #bfac65;
+	}
+.container{
+		font-family: sans-serif;
+		height:auto;
+
+.col-sm-10{
+				border-left: 2px dotted #bfac65;
+.shadowBox {
+    box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 2px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 2px;
+    border:2px solid white;
+    border-radius: 10px;
+		margin-left: 0px;
+    margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+    background-color: #FFFFFF;
+}}
+.col-sm-2{
+		border-right: 3px dotted #bfac65;
+	.shadowBox {
+	    margin: 10px;
+			margin-left: 40%;
+	    background-color: #FFFFFF;
+	}}
+}
+}
+.techskills
+{
+		flex:3;
+		text-transform:uppercase;
+	  padding-top: 10px;
+		text-align:center;
+		width:100%;
+		height:450px;
+		background-color: #707070;
+		margin: 0px;
+		color:black;
+		font-weight:14px;
+		font-family: Orbitron;
+		.extraline
+		{
+			content: '';
+		    display: block;
+		    max-width: 480px;
+		    height: 5px;
+		    margin: 6px auto 24px;
+		    background-color: #bfac65;
+		}
+}
+@media screen and (max-width : 568px) {
+	.Main {flex-flow: column wrap;
+		}
+}
